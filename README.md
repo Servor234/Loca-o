@@ -59,6 +59,12 @@ O sistema reúne uma vitrine de veículos, formulários de autenticação e perf
 
 ---
 
+## 🚧 Wireframes
+
+Todos os wireframes dos projetos estão disponíveis dentro da pasta de UML do repositorio.
+
+---
+
 ## ✨ Funcionalidades principais
 
 ### Cliente
