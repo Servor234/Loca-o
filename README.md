@@ -8,7 +8,7 @@
     </td>
     <td>
       <div>
-        <img src="https://github.com/Servor234/Loca-o/Assets/Logo.png" alt="Logo do Projeto" width="120px"/>
+        <img src="https://github.com/Servor234/Loca-o/blob/main/Assets/Logo.png" alt="Logo do Projeto" width="120px"/>
       </div>
     </td>
   </tr> 
