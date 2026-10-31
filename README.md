@@ -1,6 +1,18 @@
 # VÉRTICE — Plataforma de aluguel de veículos
-
-> Plataforma web demonstrativa para consulta de veículos, solicitação de aluguéis e gerenciamento de frota. A VÉRTICE aproxima clientes e agentes em uma experiência de locação com foco em praticidade, organização e apresentação visual.
+<table>
+  <tr>
+    <td width="800px">
+      <div align="justify">
+        Plataforma web demonstrativa para consulta de veículos, solicitação de aluguéis e gerenciamento de frota. A VÉRTICE aproxima clientes e agentes em uma experiência de locação com foco em praticidade, organização e apresentação visual.
+      </div>
+    </td>
+    <td>
+      <div>
+        <img src="https://github.com/Servor234/Loca-o/Assets/Logo.png" alt="Logo do Projeto" width="120px"/>
+      </div>
+    </td>
+  </tr> 
+</table>
 
 ---
 
