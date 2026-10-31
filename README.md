@@ -22,14 +22,15 @@
 
 A aplicação possui interface web, dados locais servidos pelo JSON Server e integrações com serviços públicos. Não é um sistema de produção: autenticação, armazenamento de imagens e persistência foram simplificados para fins de demonstração.
 
-![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-success)
-![Projeto](https://img.shields.io/badge/Projeto-Acad%C3%AAmico-blue)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-yellow)
-![Arquitetura](https://img.shields.io/badge/Arquitetura-MVC-purple)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3)
-![JSON Server](https://img.shields.io/badge/API-JSON_Server-lightgrey)
-![FIPE](https://img.shields.io/badge/Integra%C3%A7%C3%A3o-FIPE-blue)
-![ViaCEP](https://img.shields.io/badge/Integra%C3%A7%C3%A3o-ViaCEP-green)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-Runtime-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Git](https://img.shields.io/badge/Git-Versionamento-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-2ea44f?style=for-the-badge&logo=checkmarx&logoColor=white)
+![FIPE](https://img.shields.io/badge/API-FIPE-0066CC?style=for-the-badge&logo=car&logoColor=white)
+![ViaCEP](https://img.shields.io/badge/API-ViaCEP-00875A?style=for-the-badge&logo=googlemaps&logoColor=white)
 
 ---
 
