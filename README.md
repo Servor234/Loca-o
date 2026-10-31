@@ -273,6 +273,20 @@ Os módulos JavaScript estão separados por responsabilidade, conforme a arquite
 
 ## 🎥 Demonstração
 
+
+## 🎥 Demonstração
+
+### 🌐 Aplicação Web
+
+Para melhor visualização, as telas principais estão organizadas lado a lado.
+
+| Telas |  | 
+| :---: | :---: |
+| **Página Inicial (Home)** | **Página de Projetos** |
+| <img src="https://github.com/Servor234/Portifolio/blob/main/Assets/20261012_104541.gif" alt="Tela Inicial da Aplicação Web" width="120px" height="120px"> | <img src="https://github.com/Servor234/Portifolio/blob/main/Assets/20261012_104623.gif" alt="Pagina de Projetos" width="120px" height="120px"> |
+| **Pagina de Experiências** | **Pagina de Contato** |
+| <img src="https://github.com/Servor234/Portifolio/blob/main/Assets/20261012_104703.gif" alt="Tela de Cadastro de Clientes" width="120px" height="120px"> | <img src="https://github.com/Servor234/Portifolio/blob/main/Assets/20261012_105129.gif" alt="Tela de Cadastro de Produtos" width="120px" height="120px"> |
+
 A aplicação pode ser demonstrada localmente seguindo as instruções de [Instalação e execução](#-instalação-e-execução).
 
 Sugestão de capturas de tela para complementar esta documentação:
