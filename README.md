@@ -22,6 +22,12 @@
 
 A aplicação possui interface web, dados locais servidos pelo JSON Server e integrações com serviços públicos. Não é um sistema de produção: autenticação, armazenamento de imagens e persistência foram simplificados para fins de demonstração.
 
+![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-success)
+![Projeto](https://img.shields.io/badge/Projeto-Acad%C3%AAmico-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-yellow)
+![Arquitetura](https://img.shields.io/badge/Arquitetura-MVC-purple)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3)
+
 ---
 
 ## 📚 Índice
