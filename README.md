@@ -18,7 +18,7 @@
 
 ## 🚧 Status do projeto
 
-**Projeto acadêmico em desenvolvimento — versão demonstrativa.**
+**Projeto acadêmico concluido.**
 
 A aplicação possui interface web, dados locais servidos pelo JSON Server e integrações com serviços públicos. Não é um sistema de produção: autenticação, armazenamento de imagens e persistência foram simplificados para fins de demonstração.
 
@@ -38,7 +38,6 @@ A aplicação possui interface web, dados locais servidos pelo JSON Server e int
 - [Demonstração](#-demonstração)
 - [Testes e validação](#-testes-e-validação)
 - [Autores](#-autores)
-- [Licença](#-licença)
 
 ---
 
@@ -294,7 +293,9 @@ Para melhor visualização, as telas principais estão organizadas lado a lado.
 
 ## 🧪 Testes e validação
 
-Para os casos de teste use:
+###Para os casos de teste use:
+
+####Agente
 Aba dos agentes:
 - agente@demo.com
 - 123456
@@ -306,6 +307,8 @@ Roteiro de validação do cliente:
 4. Testar API da tabela FIPE, ao colocar marca e depois modelo, caso aparecer está correto.
 5. Testar API do CEP, ao colocar cep o endereço deve aparecer.
 
+
+####Cliente
 Aba dos clientes:
 - cliente@demo.com
 - 123456
@@ -318,7 +321,8 @@ Casos de teste de cliente:
 5. Selecionar meus pedidos para editar a ordem de pedido
 4. Conferir se o cliente visualiza apenas os próprios pedidos e consegue cancelar um pedido pendente.
 
-Roteiro de validação manual:
+####Geral
+Roteiro de validação geral:
 1. Executar `npm install` e `npm start`; confirmar que a interface abre sem erros no console.
 2. Acessar `http://localhost:3000/cars` e conferir os veículos retornados pela API.
 
