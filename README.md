@@ -24,7 +24,6 @@ A aplicação possui interface web, dados locais servidos pelo JSON Server e int
 - [Estrutura de pastas](#-estrutura-de-pastas)
 - [Integrações externas](#-integrações-externas)
 - [Demonstração](#-demonstração)
-- [Limitações conhecidas](#-limitações-conhecidas)
 - [Testes e validação](#-testes-e-validação)
 - [Autores](#-autores)
 - [Licença](#-licença)
@@ -49,8 +48,6 @@ O sistema reúne uma vitrine de veículos, formulários de autenticação e perf
 - Informar datas de retirada e devolução.
 - Visualizar uma estimativa do preço com base no valor da diária e no período informado.
 - Enviar solicitações de aluguel e acompanhar seu andamento.
-- Atualizar ordens de serviço (pedidos de aluguel) enquanto estiverem pendentes, alterando as datas e observações; o valor total é recalculado automaticamente.
-- Cancelar pedidos que ainda estejam pendentes.
 - Consultar e atualizar os dados do próprio perfil.
 - Excluir a própria conta na versão demonstrativa.
 
@@ -252,7 +249,8 @@ O rastro visual do mouse é desenhado localmente em um elemento `canvas` por Jav
 │   │       │   └── ApiService.js
 │   │       └── views/
 │   │           └── AppView.js
-│   └── index.html
+│   ├── index.html
+|   └── index.html.tmp
 ├── package.json
 └── README.md
 ```
@@ -278,31 +276,35 @@ As imagens ainda precisam ser capturadas e adicionadas ao repositório (por exem
 
 ---
 
-## ⚠️ Limitações conhecidas
-
-- **Autenticação demonstrativa:** as contas e senhas ficam no JSON local; a sessão do navegador é mantida em `localStorage`. Não há autenticação segura de produção, hash de senhas, controle de acesso no servidor ou proteção contra consultas diretas à API.
-- **Persistência simplificada:** JSON Server é adequado para protótipos e trabalhos acadêmicos, não substitui um banco de dados transacional para produção. A exclusão de uma conta não implementa, nesta versão, uma rotina de remoção em cascata dos pedidos associados.
-- **Imagens:** o envio de imagens como Base64 no JSON aumenta o tamanho do arquivo de dados; para produção, recomenda-se armazenamento próprio de arquivos.
-- **Serviços externos:** FIPE e ViaCEP dependem de disponibilidade de terceiros.
-- **Sem deploy configurado:** esta documentação descreve execução local; não há configuração de hospedagem de produção incluída.
-
----
-
 ## 🧪 Testes e validação
 
-Não há suíte automatizada de testes unitários ou E2E configurada no `package.json`. A sintaxe dos módulos JavaScript pode ser verificada com `node --check`.
+Para os casos de teste use:
+Aba dos agentes:
+- agente@demo.com
+- 123456
+
+Roteiro de validação do cliente:
+1. Entrar como agente.
+2. Abrir a gestão da frota e testar o CRUD de veiculos.
+3. Entrar como agente e testar aprovação e reprovação de solicitações pendentes. 
+4. Testar API da tabela FIPE, ao colocar marca e depois modelo, caso aparecer está correto.
+5. Testar API do CEP, ao colocar cep o endereço deve aparecer.
+
+Aba dos clientes:
+- cliente@demo.com
+- 123456
+
+Casos de teste de cliente:
+1. Entrar como cliente. 
+2. Atualizar cadastro como cliente. 
+3. Gerar ordem de serviço ao pressionar reservar em um carro desejado.
+4. Selecionar meus pedidos para cancelar o pedido.
+5. Selecionar meus pedidos para editar a ordem de pedido
+4. Conferir se o cliente visualiza apenas os próprios pedidos e consegue cancelar um pedido pendente.
 
 Roteiro de validação manual:
-
 1. Executar `npm install` e `npm start`; confirmar que a interface abre sem erros no console.
 2. Acessar `http://localhost:3000/cars` e conferir os veículos retornados pela API.
-3. Entrar como cliente, atualizar o perfil e criar uma solicitação de aluguel.
-4. Conferir se o cliente visualiza apenas os próprios pedidos e consegue atualizar datas e observações de um pedido pendente; verificar o recálculo do total.
-5. Testar o cancelamento de um pedido pendente e confirmar que pedidos aprovados ou reprovados não exibem a opção de atualização.
-6. Entrar como agente, abrir a gestão da frota e testar cadastro, edição, disponibilidade e exclusão de veículos.
-7. Entrar como agente e testar aprovação e reprovação de solicitações pendentes.
-8. Testar FIPE e ViaCEP; confirmar que o cadastro manual continua possível se os serviços externos falharem.
-9. Testar em diferentes larguras de tela e com a opção de redução de movimento ativada.
 
 ---
 
@@ -318,26 +320,10 @@ Roteiro de validação manual:
 
 ## 👥 Autores
 
-Adicione nesta seção os nomes dos integrantes do grupo e, se desejarem, os links para seus perfis:
-
 | Nome | GitHub |
-|---|---|
-| Integrante 1 | [@usuario](https://github.com/usuario) |
-| Integrante 2 | [@usuario](https://github.com/usuario) |
-| Integrante 3 | [@usuario](https://github.com/usuario) |
+|------|--------|
+| Renato Teixeira Miranda Guimarães | [@Servor234](https://github.com/Servor234) |
+
 
 ---
 
-## 🤝 Contribuição
-
-1. Faça um fork do repositório.
-2. Crie uma branch para sua alteração (`git checkout -b feature/minha-alteracao`).
-3. Faça commits objetivos e descritivos.
-4. Envie a branch (`git push origin feature/minha-alteracao`).
-5. Abra um Pull Request descrevendo as alterações.
-
----
-
-## 📄 Licença
-
-Nenhuma licença foi identificada nos arquivos desta cópia. Defina a licença do projeto com o grupo antes de distribuir ou reutilizar o código.
