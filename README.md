@@ -273,11 +273,6 @@ Os módulos JavaScript estão separados por responsabilidade, conforme a arquite
 
 ## 🎥 Demonstração
 
-
-## 🎥 Demonstração
-
-### 🌐 Aplicação Web
-
 Para melhor visualização, as telas principais estão organizadas lado a lado.
 
 | Telas |  | 
@@ -287,9 +282,6 @@ Para melhor visualização, as telas principais estão organizadas lado a lado.
 | **Pagina de Experiências** | **Pagina de Contato** |
 | <img src="https://github.com/Servor234/Portifolio/blob/main/Assets/20261012_104703.gif" alt="Tela de Cadastro de Clientes" width="120px" height="120px"> | <img src="https://github.com/Servor234/Portifolio/blob/main/Assets/20261012_105129.gif" alt="Tela de Cadastro de Produtos" width="120px" height="120px"> |
 
-A aplicação pode ser demonstrada localmente seguindo as instruções de [Instalação e execução](#-instalação-e-execução).
-
-Sugestão de capturas de tela para complementar esta documentação:
 
 - Página inicial e vitrine de veículos.
 - Formulário de login e cadastro.
@@ -297,8 +289,6 @@ Sugestão de capturas de tela para complementar esta documentação:
 - Perfil do cliente.
 - Painel do agente e formulário de cadastro de veículos.
 - Lista de solicitações de aluguel.
-
-As imagens ainda precisam ser capturadas e adicionadas ao repositório (por exemplo, em `docs/images/`). Evite inserir imagens de exemplo que não correspondam à versão entregue.
 
 ---
 
