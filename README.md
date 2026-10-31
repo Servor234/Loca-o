@@ -293,9 +293,9 @@ Para melhor visualização, as telas principais estão organizadas lado a lado.
 
 ## 🧪 Testes e validação
 
-###Para os casos de teste use:
+### Para os casos de teste use:
 
-####Agente
+#### Agente
 Aba dos agentes:
 - agente@demo.com
 - 123456
@@ -308,7 +308,7 @@ Roteiro de validação do cliente:
 5. Testar API do CEP, ao colocar cep o endereço deve aparecer.
 
 
-####Cliente
+#### Cliente
 Aba dos clientes:
 - cliente@demo.com
 - 123456
