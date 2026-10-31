@@ -27,6 +27,9 @@ A aplicação possui interface web, dados locais servidos pelo JSON Server e int
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-yellow)
 ![Arquitetura](https://img.shields.io/badge/Arquitetura-MVC-purple)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3)
+![JSON Server](https://img.shields.io/badge/API-JSON_Server-lightgrey)
+![FIPE](https://img.shields.io/badge/Integra%C3%A7%C3%A3o-FIPE-blue)
+![ViaCEP](https://img.shields.io/badge/Integra%C3%A7%C3%A3o-ViaCEP-green)
 
 ---
 
