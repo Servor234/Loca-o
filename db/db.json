@@ -1,0 +1,119 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Cliente Demonstração",
+      "email": "cliente@demo.com",
+      "password": "123456",
+      "role": "client",
+      "cpf": "123.456.789-00",
+      "rg": "MG-12.345.678",
+      "address": "Belo Horizonte - MG",
+      "profession": "Analista",
+      "employers": [
+        {
+          "name": "Empresa Exemplo",
+          "income": 6500
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Agente Demonstração",
+      "email": "agente@demo.com",
+      "password": "123456",
+      "role": "agent"
+    },
+    {
+      "name": "Richarlison",
+      "cpf": "1234",
+      "rg": "00001",
+      "address": "Aqui",
+      "profession": "Andantes",
+      "employer1": "",
+      "income1": "",
+      "employer2": "",
+      "income2": "",
+      "employer3": "",
+      "income3": "",
+      "email": "123@demo.com",
+      "password": "123456",
+      "role": "client",
+      "employers": [],
+      "id": 3
+    }
+  ],
+  "cars": [
+    {
+      "id": 1,
+      "brand": "BMW",
+      "model": "M4 Competition",
+      "year": 2025,
+      "plate": "RNT-4A25",
+      "registration": "REG-0001",
+      "category": "Esportivo",
+      "dailyRate": 890,
+      "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=85",
+      "description": "Performance marcante, design icônico e tecnologia de ponta.",
+      "available": true,
+      "owner": "Empresa"
+    },
+    {
+      "id": 2,
+      "brand": "Mercedes-Benz",
+      "model": "C 300",
+      "year": 2025,
+      "plate": "MBZ-3C25",
+      "registration": "REG-0002",
+      "category": "Premium",
+      "dailyRate": 620,
+      "image": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=85",
+      "description": "Conforto sofisticado para viagens e compromissos especiais.",
+      "available": true,
+      "owner": "Banco"
+    },
+    {
+      "id": 3,
+      "brand": "Porsche",
+      "model": "911 Carrera",
+      "year": 2024,
+      "plate": "PRS-9C24",
+      "registration": "REG-0003",
+      "category": "Esportivo",
+      "dailyRate": 1450,
+      "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=85",
+      "description": "Uma experiência de direção feita para ser lembrada.",
+      "available": true,
+      "owner": "Cliente"
+    },
+    {
+      "id": 4,
+      "brand": "Volvo",
+      "model": "XC60",
+      "year": 2025,
+      "plate": "VLV-6X25",
+      "registration": "REG-0004",
+      "category": "SUV",
+      "dailyRate": 540,
+      "image": "https://images.unsplash.com/photo-1568844293986-8d0400c7b7c1?auto=format&fit=crop&w=1200&q=85",
+      "description": "Espaço, segurança e versatilidade para todos os caminhos.",
+      "available": true,
+      "owner": "Empresa"
+    }
+  ],
+  "rentals": [
+    {
+      "carId": 2,
+      "carName": "Mercedes-Benz C 300",
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-31",
+      "notes": "",
+      "total": 620,
+      "userId": 1,
+      "userName": "Cliente Demonstração",
+      "status": "approved",
+      "createdAt": "2026-10-31T02:20:37.656Z",
+      "id": 1
+    }
+  ]
+}

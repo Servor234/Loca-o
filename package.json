@@ -1,0 +1,16 @@
+{
+  "name": "aluguel-carros-mvc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sistema de aluguel de carros - HTML, CSS, Bootstrap, JavaScript MVC e JSON Server",
+  "scripts": {
+    "api": "json-server --watch db/db.json --port 3000",
+    "web": "http-server public -p 5500 -c-1",
+    "start": "concurrently \"npm run api\" \"npm run web\""
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "http-server": "^14.1.1",
+    "json-server": "0.17.4"
+  }
+}

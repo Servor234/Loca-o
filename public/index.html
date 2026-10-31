@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Alugue seu próximo carro com a VÉRTICE.">
+  <title>Vértice — Mobilidade extraordinária</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div><div class="ambient ambient-three"></div>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-glass"><div class="container">
+    <a class="navbar-brand brand" href="#inicio"><span class="brand-mark">V</span> VÉRTICE<span class="brand-dot">.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="nav"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+      <li class="nav-item"><a class="nav-link" href="#frota">Nossa frota</a></li><li class="nav-item"><a class="nav-link" href="#experiencia">Experiência</a></li>
+      <li class="nav-item"><button class="btn btn-link nav-link" id="myRentalsBtn">Meus pedidos</button></li>
+      <li class="nav-item d-none" id="agentNav"><button class="btn btn-link nav-link" id="manageCarsNav">Gestão de veículos</button></li>
+      <li class="nav-item" id="authNav"><button class="btn btn-outline-light rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#authModal">Entrar</button></li>
+      <li class="nav-item d-none" id="userNav"><span class="text-white-50 small me-2" id="userName"></span><button class="btn btn-outline-light btn-sm rounded-pill me-1" id="profileBtn">Meu cadastro</button><button class="btn btn-outline-light btn-sm rounded-pill" id="logoutBtn">Sair</button></li>
+    </ul></div></div>
+  </nav>
+  <main id="inicio">
+    <section class="hero container">
+      <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-line"></span> LIBERDADE EM MOVIMENTO</div>
+        <h1>O caminho é seu.<br><span>Vá além.</span></h1>
+        <p class="hero-lead">Uma nova perspectiva sobre dirigir. Escolha seu próximo destino, nós cuidamos do resto.</p>
+        <div class="d-flex flex-wrap gap-3 mt-4"><a class="btn btn-accent btn-lg rounded-pill px-4" href="#frota">Explorar veículos <i class="bi bi-arrow-up-right ms-2"></i></a><button class="btn btn-ghost btn-lg rounded-pill px-4" id="heroReserveBtn"><i class="bi bi-key me-2"></i>Reservar agora</button></div>
+        <div class="hero-stats"><div><strong>24/7</strong><small>Suporte dedicado</small></div><div><strong>+120</strong><small>Veículos premium</small></div><div><strong>4.9/5</strong><small>Avaliação média</small></div></div>
+      </div>
+      <div class="hero-visual"><div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div><div class="hero-image-wrap"><img id="heroCarImage" src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1400&q=90" onerror="this.onerror=null;this.src='assets/images/car-placeholder.svg'" alt="Carro esportivo BMW" /></div><div class="car-glow"></div>
+        <div class="floating-card car-info"><span class="mini-label">DESTAQUE DA FROTA</span><strong id="heroCarName">BMW M4 Competition</strong><span id="heroCarPrice">R$ 890 <small>/ diária</small></span></div>
+        <div class="floating-card availability"><span class="pulse-dot"></span><span>Disponível para reserva</span></div>
+        <div class="hero-controls"><button id="prevCar" aria-label="Carro anterior"><i class="bi bi-arrow-left"></i></button><span id="heroCounter">01 / 04</span><button id="nextCar" aria-label="Próximo carro"><i class="bi bi-arrow-right"></i></button></div>
+      </div>
+      <div class="hero-bottom-note">SCROLL PARA DESCOBRIR <i class="bi bi-arrow-down ms-2"></i></div>
+    </section>
+    <section class="search-strip container"><div class="search-heading"><span class="eyebrow">ENCONTRE SEU PRÓXIMO CARRO</span><h2>Pronto para partir?</h2></div><form id="quickSearch" class="search-form"><div><label for="pickupDate">Retirada</label><input type="date" id="pickupDate" required></div><div><label for="returnDate">Devolução</label><input type="date" id="returnDate" required></div><div><label for="categoryFilter">Categoria</label><select id="categoryFilter"><option value="all">Todas as categorias</option><option>Esportivo</option><option>Premium</option><option>SUV</option></select></div><button class="btn btn-accent rounded-pill px-4" type="submit">Buscar carros <i class="bi bi-arrow-right ms-2"></i></button></form></section>
+    <section class="section container" id="frota"><div class="section-heading"><div><div class="eyebrow">SELEÇÃO VÉRTICE</div><h2>Feito para <span>o seu ritmo.</span></h2></div><p>Modelos selecionados para transformar cada trajeto em uma experiência.</p></div><div class="row g-4" id="carGrid"><div class="col-12 text-center text-white-50 py-5">Carregando frota...</div></div></section>
+    <section class="experience-section" id="experiencia"><div class="container experience-inner"><div><div class="eyebrow">MAIS QUE UM ALUGUEL</div><h2>Seu tempo merece<br><span>o extraordinário.</span></h2><p>Atendimento próximo, processo simples e uma frota que combina com o que você procura.</p></div><div class="experience-points"><div><i class="bi bi-shield-check"></i><div><strong>Tranquilidade em cada etapa</strong><small>Transparência e segurança do início ao fim.</small></div></div><div><i class="bi bi-lightning-charge"></i><div><strong>Reserva sem complicação</strong><small>Solicite seu veículo em poucos passos.</small></div></div><div><i class="bi bi-headset"></i><div><strong>Pessoas de verdade</strong><small>Suporte para acompanhar sua jornada.</small></div></div></div></div></section>
+    <section class="agent-dashboard d-none" id="agentDashboard">
+      <div class="container">
+        <div class="agent-heading"><div><div class="eyebrow">CENTRAL DO AGENTE</div><h1>Gestão da <span>frota.</span></h1><p>Cadastre, atualize e organize os veículos disponíveis para locação.</p></div><div class="d-flex align-items-center gap-3"><button type="button" class="btn btn-outline-light rounded-pill px-4" id="exitFleetManagement"><i class="bi bi-arrow-left me-2"></i>Voltar ao site</button><div class="agent-heading-icon"><i class="bi bi-car-front-fill"></i></div></div></div>
+        <div class="agent-stats row g-3 mb-4" id="agentStats"></div>
+        <div class="agent-workspace">
+          <div class="agent-form-panel">
+            <div class="d-flex align-items-center justify-content-between mb-4"><div><div class="eyebrow">CADASTRO DE VEÍCULO</div><h2 id="carFormTitle">Adicionar veículo</h2></div><button class="btn btn-sm btn-outline-light rounded-pill d-none" id="cancelCarEdit">Cancelar edição</button></div>
+            <form id="carAdminForm">
+              <input type="hidden" name="id">
+              <div class="upload-zone mb-4" id="carUploadZone"><input type="file" id="carImageFile" accept="image/png,image/jpeg,image/webp" hidden><div id="carImageEmpty"><i class="bi bi-cloud-arrow-up"></i><strong>Arraste uma imagem ou clique para enviar</strong><small>JPG, PNG ou WEBP · até 1,5 MB</small></div><img id="carImagePreview" class="d-none" alt="Prévia do veículo"><button type="button" class="upload-change" id="changeCarImage">Escolher imagem</button></div>
+              <input type="hidden" name="imageData">
+              <div class="row g-3">
+                <div class="col-md-6"><label class="form-label">Marca *</label><input class="form-control" name="brand" list="fipeBrands" required maxlength="50" placeholder="Ex.: Toyota"><datalist id="fipeBrands"></datalist></div>
+                <div class="col-md-6"><label class="form-label">Modelo *</label><input class="form-control" name="model" list="fipeModels" required maxlength="70" placeholder="Ex.: Corolla XEi"><datalist id="fipeModels"></datalist></div>
+                <div class="col-md-4"><label class="form-label">Ano *</label><input class="form-control" name="year" type="number" min="1980" max="2035" required></div>
+                <div class="col-md-4"><label class="form-label">Placa *</label><input class="form-control text-uppercase" name="plate" required maxlength="8" placeholder="ABC1D23"></div>
+                <div class="col-md-4"><label class="form-label">Matrícula / Registro *</label><input class="form-control" name="registration" required maxlength="30" placeholder="REG-0005"></div>
+                <div class="col-md-4"><label class="form-label">Categoria *</label><select class="form-select" name="category" required><option value="">Selecione</option><option>Esportivo</option><option>Premium</option><option>SUV</option><option>Hatch</option><option>Sedan</option><option>Utilitário</option></select></div>
+                <div class="col-md-4"><label class="form-label">Diária (R$) *</label><input class="form-control" name="dailyRate" type="number" min="1" step="0.01" required></div>
+                <div class="col-md-4"><label class="form-label">Quilometragem</label><input class="form-control" name="mileage" type="number" min="0" placeholder="Ex.: 25000"></div>
+                <div class="col-md-4"><label class="form-label">Câmbio</label><select class="form-select" name="transmission"><option>Automático</option><option>Manual</option><option>CVT</option></select></div>
+                <div class="col-md-4"><label class="form-label">Combustível</label><select class="form-select" name="fuel"><option>Flex</option><option>Gasolina</option><option>Diesel</option><option>Elétrico</option><option>Híbrido</option><option>Etanol</option></select></div>
+                <div class="col-md-4"><label class="form-label">Lugares</label><input class="form-control" name="seats" type="number" min="1" max="15" value="5"></div>
+                <div class="col-md-6"><label class="form-label">Proprietário do veículo</label><select class="form-select" name="owner"><option>Empresa</option><option>Banco</option><option>Cliente</option></select></div>
+                <div class="col-md-6"><label class="form-label">Disponibilidade</label><select class="form-select" name="available"><option value="true">Disponível</option><option value="false">Indisponível</option></select></div>
+                <div class="col-md-4"><label class="form-label">CEP do pátio</label><input class="form-control" name="zipCode" id="carZipCode" inputmode="numeric" maxlength="9" placeholder="00000-000"></div>
+                <div class="col-md-8"><label class="form-label">Localização / endereço</label><input class="form-control" name="location" id="carLocation" placeholder="Endereço onde o veículo está guardado"></div>
+                <div class="col-12"><label class="form-label">Descrição</label><textarea class="form-control" name="description" rows="3" maxlength="240" placeholder="Destaques, conforto e diferenciais do veículo"></textarea></div>
+              </div>
+              <div class="d-flex flex-wrap gap-2 mt-4"><button class="btn btn-accent rounded-pill px-4" type="submit" id="saveCarBtn"><i class="bi bi-plus-lg me-2"></i>Salvar veículo</button><button class="btn btn-ghost rounded-pill" type="reset" id="resetCarForm">Limpar formulário</button></div>
+              <p class="form-hint mt-3 mb-0" id="externalApiStatus">Integrações: FIPE (marcas) e ViaCEP (endereço).</p>
+            </form>
+          </div>
+          <div class="agent-list-panel"><div class="d-flex justify-content-between align-items-center mb-3"><div><div class="eyebrow">INVENTÁRIO</div><h2>Veículos cadastrados</h2></div><span class="inventory-count" id="inventoryCount">0</span></div><div class="agent-car-list" id="agentCarList"><p class="form-hint">Carregando veículos...</p></div></div>
+        </div>
+      </div>
+    </section>
+    <footer class="container footer"><a class="navbar-brand brand" href="#inicio"><span class="brand-mark">V</span> VÉRTICE<span class="brand-dot">.</span></a><span>Mobilidade extraordinária. © 2026 Vértice.</span><a href="#inicio">Voltar ao topo ↑</a></footer>
+  </main>
+  <div class="modal fade" id="authModal" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content modal-dark"><div class="modal-header border-0"><div><div class="eyebrow">BEM-VINDO À VÉRTICE</div><h5 class="modal-title" id="authTitle">Entre na sua conta</h5></div><button class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="auth-tabs"><button class="active" id="loginTab">Entrar</button><button id="registerTab">Criar conta</button></div><form id="authForm"><div class="d-none" id="nameField">
+          <div class="mb-3"><label class="form-label">Nome completo</label><input class="form-control" name="name" autocomplete="name"></div>
+          <div class="row g-2 mb-3"><div class="col-6"><label class="form-label">CPF</label><input class="form-control" name="cpf" placeholder="000.000.000-00"></div><div class="col-6"><label class="form-label">RG</label><input class="form-control" name="rg" placeholder="00.000.000"></div></div>
+          <div class="mb-3"><label class="form-label">Endereço</label><input class="form-control" name="address" placeholder="Cidade, estado"></div>
+          <div class="mb-3"><label class="form-label">Profissão</label><input class="form-control" name="profession"></div>
+          <div class="form-hint mb-2">Vínculos empregatícios (até 3, opcionais)</div>
+          <div class="row g-2 mb-2"><div class="col-7"><input class="form-control" name="employer1" placeholder="Empresa 1"></div><div class="col-5"><input class="form-control" name="income1" type="number" min="0" placeholder="Renda R$"></div></div>
+          <div class="row g-2 mb-2"><div class="col-7"><input class="form-control" name="employer2" placeholder="Empresa 2"></div><div class="col-5"><input class="form-control" name="income2" type="number" min="0" placeholder="Renda R$"></div></div>
+          <div class="row g-2 mb-3"><div class="col-7"><input class="form-control" name="employer3" placeholder="Empresa 3"></div><div class="col-5"><input class="form-control" name="income3" type="number" min="0" placeholder="Renda R$"></div></div>
+        </div><div class="mb-3"><label class="form-label">E-mail</label><input class="form-control" name="email" type="email" required autocomplete="email"></div><div class="mb-3"><label class="form-label">Senha</label><input class="form-control" name="password" type="password" minlength="6" required autocomplete="current-password"></div><div class="mb-3 d-none" id="roleField"><label class="form-label">Tipo de conta</label><select class="form-select" name="role"><option value="client">Cliente</option><option value="agent">Agente</option></select></div><button class="btn btn-accent w-100 rounded-pill mt-2" type="submit" id="authSubmit">Entrar</button><p class="form-hint mt-3 mb-0">Demonstração: cliente@demo.com / 123456 · agente@demo.com / 123456</p></form></div></div></div></div>
+  <div class="modal fade" id="profileModal" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content modal-dark"><div class="modal-header border-0"><div><div class="eyebrow">SEUS DADOS</div><h5 class="modal-title">Meu cadastro</h5></div><button class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body"><form id="profileForm"><div class="mb-3"><label class="form-label">Nome completo</label><input class="form-control" name="name" required></div><div class="mb-3"><label class="form-label">E-mail</label><input class="form-control" name="email" type="email" required></div><div class="row g-2 mb-3"><div class="col-6"><label class="form-label">CPF</label><input class="form-control" name="cpf"></div><div class="col-6"><label class="form-label">RG</label><input class="form-control" name="rg"></div></div><div class="mb-3"><label class="form-label">Endereço</label><input class="form-control" name="address"></div><div class="mb-3"><label class="form-label">Profissão</label><input class="form-control" name="profession"></div><button class="btn btn-accent rounded-pill w-100" type="submit">Salvar alterações</button></form><button class="btn btn-outline-danger btn-sm rounded-pill mt-3" id="deleteAccountBtn">Excluir meu cadastro</button></div></div></div></div>
+  <div class="modal fade" id="rentalModal" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content modal-dark"><div class="modal-header border-0"><div><div class="eyebrow">SUA PRÓXIMA JORNADA</div><h5 class="modal-title" id="rentalModalTitle">Solicitar aluguel</h5></div><button class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="selected-car mb-3" id="selectedCarInfo"></div><form id="rentalForm"><input type="hidden" name="carId"><input type="hidden" name="rentalId"><div class="row g-3"><div class="col-6"><label class="form-label">Retirada</label><input class="form-control" type="date" name="startDate" required></div><div class="col-6"><label class="form-label">Devolução</label><input class="form-control" type="date" name="endDate" required></div><div class="col-12"><label class="form-label">Observações (opcional)</label><textarea class="form-control" name="notes" rows="2" placeholder="Conte algo que devemos saber"></textarea></div></div><div class="price-summary mt-3"><span>Estimativa do aluguel</span><strong id="rentalEstimate">R$ 0,00</strong></div><button class="btn btn-accent w-100 rounded-pill mt-3" type="submit" id="rentalSubmitBtn">Enviar solicitação</button><p class="form-hint mt-2">O pedido ficará pendente até a análise de um agente.</p></form></div></div></div></div>
+  <div class="modal fade" id="rentalsModal" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content modal-dark"><div class="modal-header border-0"><div><div class="eyebrow">PAINEL VÉRTICE</div><h5 class="modal-title" id="rentalsTitle">Meus pedidos</h5></div><button class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body" id="rentalsContent"></div></div></div></div>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3"><div id="appToast" class="toast text-bg-dark border border-secondary" role="alert"><div class="d-flex"><div class="toast-body" id="toastMessage"></div><button class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button></div></div></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="assets/js/app.js"></script>
+</body></html>
