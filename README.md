@@ -321,7 +321,7 @@ Casos de teste de cliente:
 5. Selecionar meus pedidos para editar a ordem de pedido
 4. Conferir se o cliente visualiza apenas os próprios pedidos e consegue cancelar um pedido pendente.
 
-####Geral
+#### Geral
 Roteiro de validação geral:
 1. Executar `npm install` e `npm start`; confirmar que a interface abre sem erros no console.
 2. Acessar `http://localhost:3000/cars` e conferir os veículos retornados pela API.
