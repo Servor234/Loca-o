@@ -292,10 +292,10 @@ Para melhor visualização, as telas principais estão organizadas lado a lado.
 
 | Telas |  | 
 | :---: | :---: |
-| **Página Inicial (Home)** | **Página de Projetos** |
-| <img src="https://github.com/Servor234/Portifolio/blob/main/Assets/20261012_104541.gif" alt="Tela Inicial da Aplicação Web" width="120px" height="120px"> | <img src="https://github.com/Servor234/Portifolio/blob/main/Assets/20261012_104623.gif" alt="Pagina de Projetos" width="120px" height="120px"> |
-| **Pagina de Experiências** | **Pagina de Contato** |
-| <img src="https://github.com/Servor234/Portifolio/blob/main/Assets/20261012_104703.gif" alt="Tela de Cadastro de Clientes" width="120px" height="120px"> | <img src="https://github.com/Servor234/Portifolio/blob/main/Assets/20261012_105129.gif" alt="Tela de Cadastro de Produtos" width="120px" height="120px"> |
+| **Página Inicial (Home)** | **Aluguel de carros (cliente)** |
+| <img src="https://github.com/Servor234/Loca-o/blob/main/Assets/20261031_103224.gif" alt="Tela Inicial da Aplicação Web" width="120px" height="120px"> | <img src="https://github.com/Servor234/Loca-o/blob/main/Assets/20261031_103318.gif" alt="Pagina de Projetos" width="120px" height="120px"> |
+| **Gestão de veiculos (agente)** | **Aprovar e analisar ordens de serviço** |
+| <img src="https://github.com/Servor234/Loca-o/blob/main/Assets/20261031_103429.gif" alt="Tela de Cadastro de Clientes" width="120px" height="120px"> | <img src="https://github.com/Servor234/Loca-o/blob/main/Assets/20261031_103559.gif" alt="Tela de Cadastro de Produtos" width="120px" height="120px"> |
 
 
 - Página inicial e vitrine de veículos.
